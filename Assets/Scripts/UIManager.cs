@@ -28,8 +28,8 @@ public class UIManager : MonoBehaviour
         playerSlider.maxValue = player.maxHealth;
         playerSlider.value = player.currentHealth;
         playerName.text = player.playerName;
-        lives.text = "Lives: " + player.numLives.ToString();
-        zombieKilledCount.text = "Kills: " + player.enemyKillCount.ToString();
+        lives.text = "Lives: " + player.currentLives.ToString();
+        zombieKilledCount.text = "Kills: " + GameManager.instance.enemyKill.ToString();
     }
 
     void Update()
@@ -45,9 +45,9 @@ public class UIManager : MonoBehaviour
     {
         playerSlider.value = amount;
     }
-    public void UpdateUIPlayerLives(int livesLoss)
+    public void UpdateUIPlayerLives()
     {
-        lives.text = "Lives: " + (player.numLives - livesLoss).ToString();
+        lives.text = "Lives: " + player.currentLives;
     }
     public void UpdateEnemyUI(int maxHealth, int currentHealth, string name, Sprite image)
     {
@@ -61,6 +61,6 @@ public class UIManager : MonoBehaviour
     }
     public void EnemykilledCount() 
     {
-        zombieKilledCount.text = "Kill: " + player.enemyKillCount.ToString();
+        zombieKilledCount.text = "Kill: " + GameManager.instance.enemyKill.ToString();
     }
 }

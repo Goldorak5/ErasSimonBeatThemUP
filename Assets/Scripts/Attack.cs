@@ -7,10 +7,6 @@ public class Attack : MonoBehaviour
 {
     public int Damage;
     public GameObject bloodEffect;
-    private float bloodTimerDestroy;
-    private float maxBloodTime = 2f;
-    public List<GameObject> bloodEffectsList = new List<GameObject>();
-    private bool bloodEnabled = true;
     public AudioClip punchSound;
     private AudioSource audioSource;
 
@@ -21,22 +17,6 @@ public class Attack : MonoBehaviour
 
     void Update()
     {
-        if (bloodEnabled)
-        {
-         bloodTimerDestroy += Time.deltaTime;
-        }
-
-        if (bloodEffectsList.Count > 0)
-        {
-            if (bloodTimerDestroy > maxBloodTime)
-            {
-                Destroy(bloodEffectsList[0]);
-                bloodEffectsList.RemoveAt(0);
-                bloodTimerDestroy = 0f;
-            }
-        }
-        //if there is no blood on the field not try to erase blood
-        else bloodEnabled = false;
 
     }
     private void OnTriggerEnter(Collider other)
@@ -48,16 +28,14 @@ public class Attack : MonoBehaviour
         {
             audioSource.clip = punchSound;
             audioSource.Play();
-            bloodEnabled = true;
-            bloodEffectsList.Add(Instantiate(bloodEffect, enemy.gameObject.transform.position, transform.rotation));
+            Instantiate(bloodEffect, enemy.gameObject.transform.position, transform.rotation);
             enemy.HandleDamage(Damage);
         }
         if (player != null && !gameObject.CompareTag("Player"))
         {
             audioSource.clip = punchSound;
             audioSource.Play();
-            bloodEnabled = true;
-            bloodEffectsList.Add(Instantiate(bloodEffect, player.gameObject.transform.position, transform.rotation));
+            Instantiate(bloodEffect, player.gameObject.transform.position, transform.rotation);
             player.HandleDamage(Damage);
         }
     }

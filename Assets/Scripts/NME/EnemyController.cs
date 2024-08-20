@@ -179,14 +179,8 @@ public class EnemyController : MonoBehaviour
                     rigidBody.AddRelativeForce(new Vector3(-3, 4, 0), ForceMode.Impulse);
                 }
                     Die();
-                    player.enemyKillCount++;
-                    hud.EnemykilledCount();
                     PlaySFX(dieSound);
-                if(player.enemyKillCount == 5) 
-                {
-                    FindAnyObjectByType<EnemySpawner>().SpawnBoss();
-                }
-
+                    GameManager.instance.EnemyCount();
             }
         }
     }
@@ -195,8 +189,6 @@ public class EnemyController : MonoBehaviour
         animator.SetBool("IsDead", true);
         enemyState = EnemyState.Isdead;
     }
-
-
 
     public bool IsDead()
     {

@@ -15,20 +15,28 @@ public enum CharacterState
 
 public class PlayerContoller : MonoBehaviour
 {
+    
     //Caracteristic
-    public int maxHealth = 5;
-    public int currentHealth = 5;
     public string playerName = "Bruno";
     public Sprite playerIcon;
-    public int numLives;
-    public int enemyKillCount = 0;
-    public int immortalityTime = 3;
-    int flashCount = 20;
-    float flashDuration = 0.1f;
-    Transform deathTransform;
+    public int maxLives;
+    public int maxHealth = 5;
+    [HideInInspector]
+    public int currentHealth = 5;
 
+    [HideInInspector]
+    public int currentLives;
     private Rigidbody rigidBody;
     private SpriteRenderer spriteRenderer;
+    [HideInInspector]
+    public int immortalityTime = 3;
+    private int flashCount = 10;
+    private float flashDuration = 0.1f;
+    private float flashDurationFast = 0.05f;
+    private Transform deathTransform;
+
+
+    [HideInInspector]
     public CharacterState characterState = CharacterState.Idle;
 
     //HitBoxes
@@ -40,9 +48,11 @@ public class PlayerContoller : MonoBehaviour
     private bool isOnGround;
     private bool canJump;
     public float jumpForce;
+    [HideInInspector]
     public Transform groundChecker;
 
     //movement
+    [HideInInspector]
     public float currentSpeed;
     public float maxSpeed;
     public float deceleration;
@@ -58,6 +68,7 @@ public class PlayerContoller : MonoBehaviour
 
     //audio
     public AudioClip[] hurtSound, jumpSound, healthPickUps, deathSound;
+    public AudioClip attackSound;
     private AudioSource audioSource;
 
 
@@ -69,19 +80,20 @@ public class PlayerContoller : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = GetComponent<AudioSource>();
+        currentLives = maxLives;
 
         // Ignore collisions between player and enemies
         int playerLayer = LayerMask.NameToLayer("Player");
         int enemyLayer = LayerMask.NameToLayer("NME");
-
         Physics.IgnoreLayerCollision(playerLayer, enemyLayer, true);
     }
 
     void Update()
     {
         //check if player is on the ground
-        isOnGround = Physics.Linecast(transform.position, groundChecker.position, 1 << LayerMask.NameToLayer("Ground"));
-
+            isOnGround = Physics.Linecast(transform.position, groundChecker.position, 1 << LayerMask.NameToLayer("Ground"));
+        
+        
         if (!IsDead())
         {
             if(Input.GetButtonDown("Jump") && isOnGround)
@@ -101,7 +113,8 @@ public class PlayerContoller : MonoBehaviour
             {
             animator.SetTrigger("Attack");
             }
-        }else GetComponent<SpriteRenderer>().enabled = false;
+        }
+        //else GetComponent<SpriteRenderer>().enabled = false;
 
     }
 
@@ -127,7 +140,7 @@ public class PlayerContoller : MonoBehaviour
         {
             canJump = false;
             rigidBody.AddForce(Vector2.up * jumpForce);
-                PlaySFX(jumpSound);
+            PlaySFX(jumpSound);
         }
 
         //flipping the sprite
@@ -151,7 +164,7 @@ public class PlayerContoller : MonoBehaviour
 
     }
 
-    void Flip()
+    private void Flip()
     {
         //become the opposite of what it is
         facingRight = !facingRight;
@@ -188,7 +201,7 @@ public class PlayerContoller : MonoBehaviour
     }
 
     //call in idle animation
-    void ResetSpeed()
+    public void ResetSpeed()
     {
         currentSpeed = maxSpeed;
     }
@@ -202,34 +215,30 @@ public class PlayerContoller : MonoBehaviour
             FindObjectOfType<UIManager>().UpdateUIPlayerHealth(currentHealth);
             PlaySFX(hurtSound);
             
+            //if player is dead after a hit
             if (currentHealth <= 0)
             {
                 characterState = CharacterState.Dead;
                 animator.SetBool("IsDead",true);
                 PlaySFX(deathSound);
-                deathTransform = transform;
-                if (numLives > 0)
-                {
-                    FindObjectOfType<UIManager>().UpdateUIPlayerLives(1);
-                }
-                else
-                {
-                    UnityEditor.EditorApplication.isPlaying = false;
-                    //if the game is build
-                    Application.Quit();
-                }
             }
         }
     }
 
     private void RespawnPlayer()
     {
-        //reset the healt
-        currentHealth = maxHealth;
-        FindObjectOfType<UIManager>().UpdateUIPlayerHealth(currentHealth);
-
+        //reset animator
         animator.SetBool("IsDead", false);
-        animator.SetTrigger("IsRevived");
+        //animator.SetTrigger("IsRevived");
+        animator.Rebind();
+
+        //reset the health
+        currentHealth = maxHealth;
+        currentLives--;
+        FindObjectOfType<UIManager>().UpdateUIPlayerHealth(currentHealth);
+        FindObjectOfType<UIManager>().UpdateUIPlayerLives();
+        deathTransform = transform;
+
         //revive from higher
         gameObject.transform.position = new Vector3(deathTransform.position.x,deathTransform.position.y + 5,deathTransform.position.z);
         StartCoroutine(FlashingSprite());
@@ -241,13 +250,23 @@ public class PlayerContoller : MonoBehaviour
         characterState = CharacterState.Immortal;
         for (int i = 0; i <= flashCount; i++)
         {
-            //spriteRenderer.enabled = false;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+            //spriteRenderer.color = Color.red;
             yield return new WaitForSeconds(flashDuration);
 
-            //spriteRenderer.enabled = true;
-            spriteRenderer.color = Color.white;
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            //spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(flashDuration);
+        }
+        for (int i = 0; i <= flashCount; i++)
+        {
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+            //spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(flashDurationFast);
+
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            //spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(flashDurationFast);
         }
         characterState = CharacterState.Idle;
         spriteRenderer.color = Color.white;
@@ -259,12 +278,18 @@ public class PlayerContoller : MonoBehaviour
     }
 
 
+
     public void PlaySFX(AudioClip[] clip)
     {
         int indexNumber = Random.Range(0, clip.Length - 1);
 
-
         audioSource.clip = clip[indexNumber];
+        audioSource.Play();
+    }
+
+    public void AttackSound()
+    {
+        audioSource.clip = attackSound;
         audioSource.Play();
     }
 
