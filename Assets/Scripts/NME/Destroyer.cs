@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawn : MonoBehaviour
+public class Destroyer : MonoBehaviour
 {
-
-
+    public int destroyTime;
 
     void Start()
     {
-        
+        Destroy(gameObject, destroyTime);
     }
 
-    void Update()
-    {
-        
-    }
 }

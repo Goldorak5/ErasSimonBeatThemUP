@@ -11,9 +11,12 @@ public class Attack : MonoBehaviour
     private float maxBloodTime = 2f;
     public List<GameObject> bloodEffectsList = new List<GameObject>();
     private bool bloodEnabled = true;
-    void Start()
+    public AudioClip punchSound;
+    private AudioSource audioSource;
+
+    public void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -43,12 +46,16 @@ public class Attack : MonoBehaviour
 
         if (enemy != null && !gameObject.CompareTag("Enemy"))
         {
+            audioSource.clip = punchSound;
+            audioSource.Play();
             bloodEnabled = true;
             bloodEffectsList.Add(Instantiate(bloodEffect, enemy.gameObject.transform.position, transform.rotation));
             enemy.HandleDamage(Damage);
         }
         if (player != null && !gameObject.CompareTag("Player"))
         {
+            audioSource.clip = punchSound;
+            audioSource.Play();
             bloodEnabled = true;
             bloodEffectsList.Add(Instantiate(bloodEffect, player.gameObject.transform.position, transform.rotation));
             player.HandleDamage(Damage);

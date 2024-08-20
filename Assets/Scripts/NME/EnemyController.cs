@@ -36,24 +36,31 @@ public class EnemyController : MonoBehaviour
 
     //HitBoxes
     public GameObject hitBoxPunch;
+    private Vector3 originalHitBoxPosition;
+    bool isFacingLeft = true;
 
     //movement
-    private bool facingRight = false;
-    private float currentSpeed;
+    public bool facingRight = false;
+    private float currentSpeed = 2;
     public float maxSpeed;
     private float zDirection;
     private float hDirection;
     private float walkTimer;
     //distance of the character to stop
-    private float stopDistanceX = 2f;
-    private float stopDistanceZ = 1f;
+    public float stopDistanceX = 2f;
+    public float stopDistanceZ = 1f;
     private Transform playerTarget;
     private Vector3 targetDistance;
-    //For limit of the character movement up and down
+    //For limit of the Enemy movement up and down
     public float minHeight, maxHeight;
+
+    //Audio
+    private AudioSource audioSource;
+    public AudioClip[] hurtSound, dieSound;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         playerTarget = FindAnyObjectByType<PlayerContoller>().transform;
@@ -61,10 +68,17 @@ public class EnemyController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
         hud = FindObjectOfType<UIManager>();
+        targetDistance = playerTarget.position - transform.position;
+        originalHitBoxPosition = hitBoxPunch.transform.localPosition;
+
+        //ignore collision between enemies
+        int enemyLayer = LayerMask.NameToLayer("NME");
+        Physics.IgnoreLayerCollision(enemyLayer, enemyLayer, true);
     }
 
     void Update()
     {
+       
         //function to flip the sprite
         FlipSprite();
 
@@ -75,17 +89,26 @@ public class EnemyController : MonoBehaviour
         walkTimer += Time.deltaTime;
     }
 
+    
     private void FlipSprite()
     {
         if (enemyState != EnemyState.Attacking && !IsDead())
         {
+
             facingRight = (playerTarget.position.x <= transform.position.x) ? false : true;
 
-            if (facingRight)
+            if (facingRight && isFacingLeft)
             {
                 spriteRenderer.flipX = true;
+                hitBoxPunch.transform.localPosition = new Vector3(-originalHitBoxPosition.x, originalHitBoxPosition.y, originalHitBoxPosition.z);
+                isFacingLeft = false;
             }
-            else spriteRenderer.flipX = false;
+            else if(!facingRight && !isFacingLeft)
+            {
+                spriteRenderer.flipX = false;
+                hitBoxPunch.transform.localPosition = originalHitBoxPosition;
+                isFacingLeft = true;
+            }
         }
     }
 
@@ -99,19 +122,19 @@ public class EnemyController : MonoBehaviour
                 if (enemyState == EnemyState.Walking)
                 {
                    //direction of the movement
-                hDirection = targetDistance.x / Mathf.Abs(targetDistance.x);
-                zDirection = targetDistance.z / Mathf.Abs(targetDistance.z);
+                    hDirection = targetDistance.x / Mathf.Abs(targetDistance.x);
+                    zDirection = targetDistance.z / Mathf.Abs(targetDistance.z);
 
-                if (Mathf.Abs(targetDistance.x) <= stopDistanceX)
-                {
-                hDirection = 0;
-                }
+                    if (Mathf.Abs(targetDistance.x) <= stopDistanceX)
+                    {
+                    hDirection = 0;
+                    }
 
-                //move enemy
-                 rigidBody.velocity = new Vector3(hDirection * currentSpeed, 0, zDirection * currentSpeed);
+                     //move enemy
+                     rigidBody.velocity = new Vector3(hDirection * currentSpeed, 0, zDirection * currentSpeed);
 
-                //play animation
-                animator.SetFloat("Speed", Mathf.Abs(currentSpeed));
+                     //play animation
+                     animator.SetFloat("Speed", Mathf.Abs(currentSpeed));
 
                 }
                 //set enemyState to walking if player is too far 
@@ -140,6 +163,7 @@ public class EnemyController : MonoBehaviour
         {
             currentHealth -= damageAmount;
             animator.SetTrigger("IsHit");
+            PlaySFX(hurtSound);
 
             FindObjectOfType<UIManager>().UpdateEnemyUI(maxHealth,currentHealth,enemyName,enemyImage);
 
@@ -148,12 +172,21 @@ public class EnemyController : MonoBehaviour
                 if (!facingRight)
                 {
                     //force to push the enemy when is dead
-                 rigidBody.AddRelativeForce(new Vector3(3, 4, 0), ForceMode.Impulse);
+                    rigidBody.AddRelativeForce(new Vector3(3, 4, 0), ForceMode.Impulse);
                 }
-                else rigidBody.AddRelativeForce(new Vector3(-3, 4, 0), ForceMode.Impulse);
-                Die();
-                player.enemyKillCount++;
-                hud.EnemykilledCount();
+                else
+                {
+                    rigidBody.AddRelativeForce(new Vector3(-3, 4, 0), ForceMode.Impulse);
+                }
+                    Die();
+                    player.enemyKillCount++;
+                    hud.EnemykilledCount();
+                    PlaySFX(dieSound);
+                if(player.enemyKillCount == 5) 
+                {
+                    FindAnyObjectByType<EnemySpawner>().SpawnBoss();
+                }
+
             }
         }
     }
@@ -165,7 +198,7 @@ public class EnemyController : MonoBehaviour
 
 
 
-    private bool IsDead()
+    public bool IsDead()
     {
         return enemyState == EnemyState.Isdead;
     }
@@ -196,6 +229,13 @@ public class EnemyController : MonoBehaviour
     {
         //deactivate enemy
         gameObject.SetActive(false);
+    }
+
+    public void PlaySFX(AudioClip[] clip)
+    {
+        int indexNumber = Random.Range(0, clip.Length);
+        audioSource.clip = clip[indexNumber];
+        audioSource.Play();
     }
 
 }

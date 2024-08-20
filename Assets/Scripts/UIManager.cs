@@ -41,11 +41,14 @@ public class UIManager : MonoBehaviour
             enemyTimer = 0;
         }
     }
-    public void UpdateUIPlayer(int amount)
+    public void UpdateUIPlayerHealth(int amount)
     {
         playerSlider.value = amount;
     }
-
+    public void UpdateUIPlayerLives(int livesLoss)
+    {
+        lives.text = "Lives: " + (player.numLives - livesLoss).ToString();
+    }
     public void UpdateEnemyUI(int maxHealth, int currentHealth, string name, Sprite image)
     {
         enemySlider.maxValue = maxHealth;
