@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public Boss boss;
     private bool bossSpawned = false;
     private bool levelAdvanced = false;
+    public MusicController musicController;
 
     private void Awake()
     {
@@ -25,11 +26,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+
         player = FindObjectOfType<PlayerContoller>();
         hud = FindObjectOfType<UIManager>();
         spawner = FindObjectOfType<EnemySpawner>();
+        enemyKill = 0;
+        bossSpawned = false;
+        levelAdvanced = false;
+        hud.UpdateEnemykilledCount();
     }
-
+    
     void Update()
     {
         if (player.currentLives < 0)
@@ -56,7 +62,7 @@ public class GameManager : MonoBehaviour
     public void EnemyCount()
     {
         enemyKill++;
-        hud.EnemykilledCount();
+        hud.UpdateEnemykilledCount();
     }
     private void AdvanceLevel()
     {
@@ -66,7 +72,6 @@ public class GameManager : MonoBehaviour
             moveBattleGround.ActivateGo();
             levelAdvanced = true;
         }
-        
     }
     private void SpawnBoss(Boss boss)
     {
@@ -77,4 +82,15 @@ public class GameManager : MonoBehaviour
         }
        
     }
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void BossDefeated()
+    {
+        musicController.PlaySong(musicController.levelClearSong);
+        Invoke("LoadNextScene", 5f);
+    }
+
 }

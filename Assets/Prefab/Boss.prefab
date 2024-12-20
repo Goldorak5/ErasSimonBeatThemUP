@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7333488727588757176}
   - component: {fileID: 8697158795923827096}
+  - component: {fileID: 8077286055820764974}
   m_Layer: 11
   m_Name: HitBox
   m_TagString: Untagged
@@ -53,6 +54,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8077286055820764974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6251080413865515511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5f3b6150756be448e85137c51c5fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0
+  counterDamage: 0
+  bloodEffect: {fileID: 0}
+  punchSound: {fileID: 0}
+  enemyController: {fileID: 0}
 --- !u!1 &6660762717593520535
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +253,7 @@ MonoBehaviour:
   attackRate: 1
   enemyState: 1
   hitBoxPunch: {fileID: 6251080413865515511}
+  hitBoxCounter: {fileID: 0}
   facingRight: 0
   maxSpeed: 2
   stopDistanceX: 2
@@ -261,9 +280,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 2
+  counterDamage: 0
   bloodEffect: {fileID: 4437394316826535492, guid: 7fb5a2b41a475ef4b9d1d633a3523413, type: 3}
-  bloodEffectsList: []
   punchSound: {fileID: 8300000, guid: 119480eacbb7d944f9af8d37bb87a35e, type: 3}
+  enemyController: {fileID: 0}
 --- !u!82 &-6862994728655203489
 AudioSource:
   m_ObjectHideFlags: 0

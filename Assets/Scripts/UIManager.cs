@@ -59,7 +59,7 @@ public class UIManager : MonoBehaviour
 
         enemyUI.SetActive(true);
     }
-    public void EnemykilledCount() 
+    public void UpdateEnemykilledCount() 
     {
         zombieKilledCount.text = "Kill: " + GameManager.instance.enemyKill.ToString();
     }

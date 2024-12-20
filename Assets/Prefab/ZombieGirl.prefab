@@ -184,8 +184,8 @@ MonoBehaviour:
   hitBoxPunch: {fileID: 8939078240475643442}
   facingRight: 0
   maxSpeed: 4
-  stopDistanceX: 1.5
-  stopDistanceZ: 1
+  stopDistanceX: 0.8
+  stopDistanceZ: 0.8
   minHeight: -1.8
   maxHeight: 2.8
   hurtSound:
@@ -206,7 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 3
   bloodEffect: {fileID: 4437394316826535492, guid: 7fb5a2b41a475ef4b9d1d633a3523413, type: 3}
-  bloodEffectsList: []
   punchSound: {fileID: 8300000, guid: 7c93b10518692d64e9425c35515a86cd, type: 3}
 --- !u!82 &3773945610737544617
 AudioSource:

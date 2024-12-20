@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,6 +9,8 @@ public enum CharacterState
     Idle,
     Walk,
     Attack,
+    Counter,
+    Finisher,
     Jump,
     Dead,
     Immortal
@@ -26,7 +29,7 @@ public class PlayerContoller : MonoBehaviour
 
     [HideInInspector]
     public int currentLives;
-    private Rigidbody rigidBody;
+    public Rigidbody rigidBody;
     private SpriteRenderer spriteRenderer;
     [HideInInspector]
     public int immortalityTime = 3;
@@ -34,7 +37,6 @@ public class PlayerContoller : MonoBehaviour
     private float flashDuration = 0.1f;
     private float flashDurationFast = 0.05f;
     private Transform deathTransform;
-
 
     [HideInInspector]
     public CharacterState characterState = CharacterState.Idle;
@@ -48,8 +50,10 @@ public class PlayerContoller : MonoBehaviour
     private bool isOnGround;
     private bool canJump;
     public float jumpForce;
-    [HideInInspector]
     public Transform groundChecker;
+    public float diveSpeed = -10f;
+    public float horizontalForce = 5f;
+    private bool isJumpAttacking = false;
 
     //movement
     [HideInInspector]
@@ -58,13 +62,22 @@ public class PlayerContoller : MonoBehaviour
     public float deceleration;
     private float inputValueH;
     private float inputValueV;
-    private bool facingRight = true;
+    public bool facingRight = true;
+    private bool canMove = true;
+    private bool wasGrounded;
 
     //For limit of the player mouvement
     public float minHeight, maxHeight;
 
     //Animation
     private Animator animator;
+
+    //Camera Shake
+    public CameraShake cameraShake;
+    public NoiseSettings landingCameraShakeProfil;
+    public NoiseSettings counterCameraShakeProfil;
+    public NoiseSettings punchCameraShakeProfil;
+    public float cameraShakeDuration;
 
     //audio
     public AudioClip[] hurtSound, jumpSound, healthPickUps, deathSound;
@@ -82,6 +95,7 @@ public class PlayerContoller : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         currentLives = maxLives;
 
+
         // Ignore collisions between player and enemies
         int playerLayer = LayerMask.NameToLayer("Player");
         int enemyLayer = LayerMask.NameToLayer("NME");
@@ -92,56 +106,73 @@ public class PlayerContoller : MonoBehaviour
     {
         //check if player is on the ground
             isOnGround = Physics.Linecast(transform.position, groundChecker.position, 1 << LayerMask.NameToLayer("Ground"));
-        
+
+        //is landing
+        if (isOnGround && !wasGrounded && rigidBody.velocity.y <= 0)
+        {
+            cameraShake.TriggerShake(cameraShakeDuration, landingCameraShakeProfil);
+        }
+         wasGrounded = isOnGround;
         
         if (!IsDead())
-        {
+        {  
+            //jump
             if(Input.GetButtonDown("Jump") && isOnGround)
             {
-            canJump = true;
+                canJump = true;
+                cameraShake.TriggerShake(cameraShakeDuration, landingCameraShakeProfil);
             }
-        //get value of h by pressing left and right
-        inputValueH = Input.GetAxis("Horizontal");
+             //get value of h by pressing left and right
+            inputValueH = Input.GetAxis("Horizontal");
 
-        //get value of z by pressing up and down
-        inputValueV = Input.GetAxis("Vertical");
+            //get value of z by pressing up and down
+            inputValueV = Input.GetAxis("Vertical");
 
-        //jumping animation
-        animator.SetBool("IsOnGround", isOnGround);
+            //jumping animation
+            animator.SetBool("IsOnGround", isOnGround);
 
-            if(Input.GetButtonDown("Fire1"))
+            if(Input.GetButtonDown("Attack"))
             {
-            animator.SetTrigger("Attack");
+                animator.SetTrigger("Attack");
+            }
+            if (Input.GetButtonDown("Counter"))
+            {
+                Counter();
             }
         }
-        //else GetComponent<SpriteRenderer>().enabled = false;
-
+        
     }
 
     private void FixedUpdate()
     {
-        if(!IsDead())
+        
+        if (!IsDead())
         {
+            if (canMove)
+            {
+                if (!isJumpAttacking && characterState != CharacterState.Counter)
+                {
+                    // player body will move depending of the value horizontal and vertical
+                    rigidBody.velocity = new Vector3(inputValueH * currentSpeed,
+                                           rigidBody.velocity.y,
+                                           inputValueV * currentSpeed);
+                }
 
-        // player body will move depending of the value horizontal and vertical
-        rigidBody.velocity = new Vector3(inputValueH * currentSpeed, 
-                                        rigidBody.velocity.y, 
-                                        inputValueV * currentSpeed);
+                    //Play animation walking depending on velocity
+                 if (isOnGround)
+                 {
+                     isJumpAttacking = false;
+                     animator.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.magnitude));
+                 }
 
-
-        //Play animation walking depending on velocity
-        if (isOnGround)
-        {
-            animator.SetFloat("Speed", Mathf.Abs(rigidBody.velocity.magnitude));
-        }
-
-        //jump
-        if (canJump )
-        {
-            canJump = false;
-            rigidBody.AddForce(Vector2.up * jumpForce);
-            PlaySFX(jumpSound);
-        }
+                    //jump
+                 if (canJump)
+                 {
+                     canJump = false;
+                     rigidBody.AddForce(Vector2.up * jumpForce);
+                     PlaySFX(jumpSound);
+                 }   
+            }
 
         //flipping the sprite
         if (!facingRight && inputValueH > 0)
@@ -160,10 +191,19 @@ public class PlayerContoller : MonoBehaviour
                                          rigidBody.position.y,
                                          Mathf.Clamp(rigidBody.position.z, minHeight, maxHeight));
         }
-
-
     }
-
+    private void Counter()
+    {
+       
+        canMove = false;
+        animator.SetTrigger("Counter");
+        characterState = CharacterState.Counter;
+    }
+    public void IdleState()
+    {
+        characterState = CharacterState.Idle;
+        canMove = true;
+    }
     private void Flip()
     {
         //become the opposite of what it is
@@ -221,10 +261,36 @@ public class PlayerContoller : MonoBehaviour
                 characterState = CharacterState.Dead;
                 animator.SetBool("IsDead",true);
                 PlaySFX(deathSound);
+                Debug.Log("Character Dead");
+                Debug.Log(characterState);
+
             }
         }
     }
 
+    public void CounterAttack()
+    {
+        animator.SetTrigger("CounterAttack");
+    }
+
+    private void JumpAttack()
+    {
+
+        if (!facingRight)
+        {
+            isJumpAttacking = true;
+            Vector3 diagonalDive = new Vector3(-horizontalForce, diveSpeed, 0);
+            rigidBody.velocity = diagonalDive;
+           // Debug.Log(rigidBody.velocity.x);
+        }
+        else
+        {
+            isJumpAttacking = true;
+            Vector3 diagonalDive = new Vector3(horizontalForce, diveSpeed, 0);
+            rigidBody.velocity = diagonalDive;
+           // Debug.Log(rigidBody.velocity.x);
+        }
+    }
     private void RespawnPlayer()
     {
         //reset animator
@@ -276,8 +342,6 @@ public class PlayerContoller : MonoBehaviour
     {
         return characterState == CharacterState.Dead;
     }
-
-
 
     public void PlaySFX(AudioClip[] clip)
     {

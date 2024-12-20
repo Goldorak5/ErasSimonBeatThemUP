@@ -1,0 +1,2404 @@
+fileFormatVersion: 2
+guid: 596804a3df6c0a948bed1d4310052b17
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3256305003917173294
+    second: Death j-z_0
+  - first:
+      213: -2887633687377486756
+    second: Death j-z_1
+  - first:
+      213: -8204216902595429238
+    second: Death j-z_2
+  - first:
+      213: -3543589169286094539
+    second: Death j-z_3
+  - first:
+      213: -5978772796066553941
+    second: Death j-z_4
+  - first:
+      213: -759945136597210294
+    second: Death j-z_5
+  - first:
+      213: -6728908410287804044
+    second: Death j-z_6
+  - first:
+      213: 5646299705857021962
+    second: Death j-z_7
+  - first:
+      213: -2094519118496070117
+    second: Death j-z_8
+  - first:
+      213: -7717800935167989642
+    second: Death j-z_9
+  - first:
+      213: -2184526632495804014
+    second: Death j-z_10
+  - first:
+      213: -927725840590139258
+    second: Death j-z_11
+  - first:
+      213: 6173373703549468863
+    second: Death j-z_12
+  - first:
+      213: -7088886447772572567
+    second: Death j-z_13
+  - first:
+      213: 2686162441603371705
+    second: Death j-z_14
+  - first:
+      213: -1457991429085843746
+    second: Death j-z_15
+  - first:
+      213: -7977332513813284246
+    second: Death j-z_16
+  - first:
+      213: 6109429158982741570
+    second: Death j-z_17
+  - first:
+      213: -9064454655553430586
+    second: Death j-z_18
+  - first:
+      213: -576019207271765581
+    second: Death j-z_19
+  - first:
+      213: 7390016049032803242
+    second: Death j-z_20
+  - first:
+      213: 6563236432719994687
+    second: Death j-z_21
+  - first:
+      213: -397409476302063079
+    second: Death j-z_22
+  - first:
+      213: 3168803932750135708
+    second: Death j-z_23
+  - first:
+      213: -7954136143756421010
+    second: Death j-z_24
+  - first:
+      213: 8131648640103186713
+    second: Death j-z_25
+  - first:
+      213: -749172071514533277
+    second: Death j-z_26
+  - first:
+      213: -4229909224176791263
+    second: Death j-z_27
+  - first:
+      213: -3003998919930626666
+    second: Death j-z_28
+  - first:
+      213: 4659181526330606119
+    second: Death j-z_29
+  - first:
+      213: 4758902887546094647
+    second: Death j-z_30
+  - first:
+      213: 8970562619108514263
+    second: Death j-z_31
+  - first:
+      213: -4375034869916179276
+    second: Death j-z_32
+  - first:
+      213: 855470341084123104
+    second: Death j-z_33
+  - first:
+      213: 4805172519354962660
+    second: Death j-z_34
+  - first:
+      213: 542311959637952961
+    second: Death j-z_35
+  - first:
+      213: -2428660014767718141
+    second: Death j-z_36
+  - first:
+      213: 6096444537840852449
+    second: Death j-z_37
+  - first:
+      213: -7785801368332222559
+    second: Death j-z_38
+  - first:
+      213: 4790511565376237178
+    second: Death j-z_39
+  - first:
+      213: -4557723377627289206
+    second: Death j-z_40
+  - first:
+      213: -4536988814007876552
+    second: Death j-z_41
+  - first:
+      213: -5347135196866170596
+    second: Death j-z_42
+  - first:
+      213: -1945060504015704490
+    second: Death j-z_43
+  - first:
+      213: -4495596299709344954
+    second: Death j-z_44
+  - first:
+      213: -602084311336295133
+    second: Death j-z_45
+  - first:
+      213: 3428832043635996028
+    second: Death j-z_46
+  - first:
+      213: 3307591266341215577
+    second: Death j-z_47
+  - first:
+      213: -4005412587574037704
+    second: Death j-z_48
+  - first:
+      213: -497401574536750042
+    second: Death j-z_49
+  - first:
+      213: 5032201803979731370
+    second: Death j-z_50
+  - first:
+      213: 5796547066606715828
+    second: Death j-z_51
+  - first:
+      213: 5666896249298633970
+    second: Death j-z_52
+  - first:
+      213: -7860093261333735091
+    second: Death j-z_53
+  - first:
+      213: 181838704683370528
+    second: Death j-z_54
+  - first:
+      213: -4578228107135836918
+    second: Death j-z_55
+  - first:
+      213: 6420539884007806212
+    second: Death j-z_56
+  - first:
+      213: 6670633751934552716
+    second: Death j-z_57
+  - first:
+      213: -6369415651255890854
+    second: Death j-z_58
+  - first:
+      213: 7682861995265309992
+    second: Death j-z_59
+  - first:
+      213: -281894943640244863
+    second: Death j-z_60
+  - first:
+      213: -775047040221410098
+    second: Death j-z_61
+  - first:
+      213: -6083522396855806533
+    second: Death j-z_62
+  - first:
+      213: -941708170147367167
+    second: Death j-z_63
+  - first:
+      213: -5051143020370012494
+    second: Death j-z_64
+  - first:
+      213: 7254644439625960899
+    second: Death j-z_65
+  - first:
+      213: -497740521331547953
+    second: Death j-z_66
+  - first:
+      213: -8145288952935427164
+    second: Death j-z_67
+  - first:
+      213: 4242117562166864412
+    second: Death j-z_68
+  - first:
+      213: -7426703724359871528
+    second: Death j-z_69
+  - first:
+      213: -5763732311939951211
+    second: Death j-z_70
+  - first:
+      213: -7522546064492643172
+    second: Death j-z_71
+  - first:
+      213: 5215073784514898316
+    second: Death j-z_72
+  - first:
+      213: 6888238484533947106
+    second: Death j-z_73
+  - first:
+      213: -7468752919767568540
+    second: Death j-z_74
+  - first:
+      213: -8853500930581472717
+    second: Death j-z_75
+  - first:
+      213: 8053785582003659406
+    second: Death j-z_76
+  - first:
+      213: 6116587513133073918
+    second: Death j-z_77
+  - first:
+      213: 6713702075540755193
+    second: Death j-z_78
+  - first:
+      213: 3319499330701685530
+    second: Death j-z_79
+  - first:
+      213: 6115507726527064711
+    second: Death j-z_80
+  - first:
+      213: 7506014566244484393
+    second: Death j-z_81
+  - first:
+      213: -3733388640233868798
+    second: Death j-z_82
+  - first:
+      213: -5813849995515354571
+    second: Death j-z_83
+  - first:
+      213: -3386028420607191284
+    second: Death j-z_84
+  - first:
+      213: -5673736310099758917
+    second: Death j-z_85
+  - first:
+      213: -7851860600219200535
+    second: Death j-z_86
+  - first:
+      213: -2082195842861756157
+    second: Death j-z_87
+  - first:
+      213: 4408375891429520591
+    second: Death j-z_88
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Death j-z_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.21782856, y: 0.51175845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e226fcef528b03d20800000000000000
+      internalID: 3256305003917173294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.21782875, y: 0.48824403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cd96ee5701de7d0800000000000000
+      internalID: -2887633687377486756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.22370727, y: 0.48824403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c3b84e134c42e80800000000000000
+      internalID: -8204216902595429238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 899
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.21195038, y: 0.4764868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531e7cedc64a2dec0800000000000000
+      internalID: -3543589169286094539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 899
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.21195038, y: 0.48824403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf1fa1a1d1270da0800000000000000
+      internalID: -5978772796066553941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_5
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.17667907, y: 0.4764868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b6654bce12475f0800000000000000
+      internalID: -759945136597210294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.20019348, y: 0.4647296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47138aeb37d1e92a0800000000000000
+      internalID: -6728908410287804044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.1938324, y: 0.47216615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a081007caafab5e40800000000000000
+      internalID: 5646299705857021962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.17991516, y: 0.47216615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1607ce75f5cee2e0800000000000000
+      internalID: -2094519118496070117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.16826782, y: 0.46230286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678622ca0fcd4e490800000000000000
+      internalID: -7717800935167989642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.18255712, y: 0.4588513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29115b31a900fa1e0800000000000000
+      internalID: -2184526632495804014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_11
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.19431442, y: 0.4529724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6809ca6634e0023f0800000000000000
+      internalID: -927725840590139258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.18255737, y: 0.48824403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0cdc9ecaa3ca550800000000000000
+      internalID: 6173373703549468863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.18843597, y: 0.48236573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9646f6395573f9d90800000000000000
+      internalID: -7088886447772572567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.21195038, y: 0.4764868}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d3cc328a274520800000000000000
+      internalID: 2686162441603371705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_15
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 800
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.22370788, y: 0.5000012}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede26cf158c24cbe0800000000000000
+      internalID: -1457991429085843746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 801
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a3cfa2852da4190800000000000000
+      internalID: -7977332513813284246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e6491737d09c450800000000000000
+      internalID: 6109429158982741570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb1a1d2486943280800000000000000
+      internalID: -9064454655553430586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_19
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 800
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9a3c635919108f0800000000000000
+      internalID: -576019207271765581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.47729918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3390f417c9e8660800000000000000
+      internalID: 7390016049032803242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_21
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f5d2513cc451b50800000000000000
+      internalID: 6563236432719994687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_22
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 699
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a34a6df2e1c7af0800000000000000
+      internalID: -397409476302063079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 701
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91ce66436ad9fb20800000000000000
+      internalID: 3168803932750135708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_24
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e689d40f15b3d9190800000000000000
+      internalID: -7954136143756421010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91183a7da5b69d070800000000000000
+      internalID: 8131648640103186713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_26
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3629bb168f76a95f0800000000000000
+      internalID: -749172071514533277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_27
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113501}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1215bccb8f75c45c0800000000000000
+      internalID: -4229909224176791263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.48868468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69db0efe5e6af46d0800000000000000
+      internalID: -3003998919930626666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 700
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7228ffca9ecb8a040800000000000000
+      internalID: 4659181526330606119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73404c466f40b0240800000000000000
+      internalID: 4758902887546094647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.48868468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d95c5b8c27dd7c70800000000000000
+      internalID: 8970562619108514263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_32
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4e2ba37f0c843c0800000000000000
+      internalID: -4375034869916179276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_33
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef83342ebd3fdb00800000000000000
+      internalID: 855470341084123104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e21f9c82f66fa240800000000000000
+      internalID: 4805172519354962660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.48868468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c98aaf9adda68700800000000000000
+      internalID: 542311959637952961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301439b859aab4ed0800000000000000
+      internalID: -2428660014767718141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_37
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eddfdeb10cea9450800000000000000
+      internalID: 6096444537840852449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afbecc08e643f390800000000000000
+      internalID: -7785801368332222559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_39
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 600
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ea6a233e05b7240800000000000000
+      internalID: 4790511565376237178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8928046cb6bfb0c0800000000000000
+      internalID: -4557723377627289206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_41
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834c32f26b06901c0800000000000000
+      internalID: -4536988814007876552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 501
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11bdc86ed82bc5b0800000000000000
+      internalID: -5347135196866170596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_43
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e6087e6c1c105e0800000000000000
+      internalID: -1945060504015704490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_44
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643934eebfe6c91c0800000000000000
+      internalID: -4495596299709344954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_45
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 499
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325e6f14287f4a7f0800000000000000
+      internalID: -602084311336295133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.47737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c757663b398a59f20800000000000000
+      internalID: 3428832043635996028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_47
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dd37c7bbce6ed20800000000000000
+      internalID: 3307591266341215577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_48
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83375c2297ae968c0800000000000000
+      internalID: -4005412587574037704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_49
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 500
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.48868468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c540f37efd819f0800000000000000
+      internalID: -497401574536750042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5339435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1ba4401e8f5d540800000000000000
+      internalID: 5032201803979731370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b30dec78d8717050800000000000000
+      internalID: 5796547066606715828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_52
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4407e3d1cd4ae40800000000000000
+      internalID: 5666896249298633970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_53
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49d2c8c2d65be290800000000000000
+      internalID: -7860093261333735091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_54
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 401
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028c117a655068200800000000000000
+      internalID: 181838704683370528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_55
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d95750bcdd670c0800000000000000
+      internalID: -4578228107135836918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405538cc1075a1950800000000000000
+      internalID: 6420539884007806212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_57
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a4aca0e0ad29c50800000000000000
+      internalID: 6670633751934552716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_58
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c4418363a4b97a0800000000000000
+      internalID: -6369415651255890854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_59
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 400
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.49999908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d332677420f9a60800000000000000
+      internalID: 7682861995265309992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d2854da02861cf0800000000000000
+      internalID: -281894943640244863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc8263c2da7e35f0800000000000000
+      internalID: -775047040221410098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_62
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5d648ac9cf29ba0800000000000000
+      internalID: -6083522396855806533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_63
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107784c98616ee2f0800000000000000
+      internalID: -941708170147367167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_64
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6d6216f2cb6e9b0800000000000000
+      internalID: -5051143020370012494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_65
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 301
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd0bab5eacada460800000000000000
+      internalID: 7254644439625960899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc027bb02aba719f0800000000000000
+      internalID: -497740521331547953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_67
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.5113144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3de575ade16fe80800000000000000
+      internalID: -8145288952935427164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ae66472770fda30800000000000000
+      internalID: 4242117562166864412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_69
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 300
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.2178286, y: 0.488685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d39571af4c0fe890800000000000000
+      internalID: -7426703724359871528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3868517, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595d066fffb1300b0800000000000000
+      internalID: -5763732311939951211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_71
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c3763e53c8a9790800000000000000
+      internalID: -7522546064492643172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c896673f9f9af5840800000000000000
+      internalID: 5215073784514898316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_73
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.4999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea22def760f79f50800000000000000
+      internalID: 6888238484533947106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_74
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fa7166ac8a95890800000000000000
+      internalID: -7468752919767568540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_75
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ad91ebfcb022580800000000000000
+      internalID: -8853500930581472717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_76
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82ad78e05bc4cf60800000000000000
+      internalID: 8053785582003659406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_77
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef503e5afeb72e450800000000000000
+      internalID: 6116587513133073918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2d86c877cdb2d50800000000000000
+      internalID: 6713702075540755193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_79
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 200
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13fe96cd0b311e20800000000000000
+      internalID: 3319499330701685530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a6dcc30e5aed450800000000000000
+      internalID: 6115507726527064711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_81
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92509ebba78ba2860800000000000000
+      internalID: 7506014566244484393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_82
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202b162efc6503cc0800000000000000
+      internalID: -3733388640233868798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_83
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532a6ef6b3e015fa0800000000000000
+      internalID: -5813849995515354571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d45667196201d0800000000000000
+      internalID: -3386028420607191284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_85
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0b44ff2e6d241b0800000000000000
+      internalID: -5673736310099758917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_86
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e39c029266980390800000000000000
+      internalID: -7851860600219200535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_87
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 100
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3011e61b9ed8a13e0800000000000000
+      internalID: -2082195842861756157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Death j-z_88
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 101
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.3070439, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc47d054482bd2d30800000000000000
+      internalID: 4408375891429520591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Death j-z_0: 3256305003917173294
+      Death j-z_1: -2887633687377486756
+      Death j-z_10: -2184526632495804014
+      Death j-z_11: -927725840590139258
+      Death j-z_12: 6173373703549468863
+      Death j-z_13: -7088886447772572567
+      Death j-z_14: 2686162441603371705
+      Death j-z_15: -1457991429085843746
+      Death j-z_16: -7977332513813284246
+      Death j-z_17: 6109429158982741570
+      Death j-z_18: -9064454655553430586
+      Death j-z_19: -576019207271765581
+      Death j-z_2: -8204216902595429238
+      Death j-z_20: 7390016049032803242
+      Death j-z_21: 6563236432719994687
+      Death j-z_22: -397409476302063079
+      Death j-z_23: 3168803932750135708
+      Death j-z_24: -7954136143756421010
+      Death j-z_25: 8131648640103186713
+      Death j-z_26: -749172071514533277
+      Death j-z_27: -4229909224176791263
+      Death j-z_28: -3003998919930626666
+      Death j-z_29: 4659181526330606119
+      Death j-z_3: -3543589169286094539
+      Death j-z_30: 4758902887546094647
+      Death j-z_31: 8970562619108514263
+      Death j-z_32: -4375034869916179276
+      Death j-z_33: 855470341084123104
+      Death j-z_34: 4805172519354962660
+      Death j-z_35: 542311959637952961
+      Death j-z_36: -2428660014767718141
+      Death j-z_37: 6096444537840852449
+      Death j-z_38: -7785801368332222559
+      Death j-z_39: 4790511565376237178
+      Death j-z_4: -5978772796066553941
+      Death j-z_40: -4557723377627289206
+      Death j-z_41: -4536988814007876552
+      Death j-z_42: -5347135196866170596
+      Death j-z_43: -1945060504015704490
+      Death j-z_44: -4495596299709344954
+      Death j-z_45: -602084311336295133
+      Death j-z_46: 3428832043635996028
+      Death j-z_47: 3307591266341215577
+      Death j-z_48: -4005412587574037704
+      Death j-z_49: -497401574536750042
+      Death j-z_5: -759945136597210294
+      Death j-z_50: 5032201803979731370
+      Death j-z_51: 5796547066606715828
+      Death j-z_52: 5666896249298633970
+      Death j-z_53: -7860093261333735091
+      Death j-z_54: 181838704683370528
+      Death j-z_55: -4578228107135836918
+      Death j-z_56: 6420539884007806212
+      Death j-z_57: 6670633751934552716
+      Death j-z_58: -6369415651255890854
+      Death j-z_59: 7682861995265309992
+      Death j-z_6: -6728908410287804044
+      Death j-z_60: -281894943640244863
+      Death j-z_61: -775047040221410098
+      Death j-z_62: -6083522396855806533
+      Death j-z_63: -941708170147367167
+      Death j-z_64: -5051143020370012494
+      Death j-z_65: 7254644439625960899
+      Death j-z_66: -497740521331547953
+      Death j-z_67: -8145288952935427164
+      Death j-z_68: 4242117562166864412
+      Death j-z_69: -7426703724359871528
+      Death j-z_7: 5646299705857021962
+      Death j-z_70: -5763732311939951211
+      Death j-z_71: -7522546064492643172
+      Death j-z_72: 5215073784514898316
+      Death j-z_73: 6888238484533947106
+      Death j-z_74: -7468752919767568540
+      Death j-z_75: -8853500930581472717
+      Death j-z_76: 8053785582003659406
+      Death j-z_77: 6116587513133073918
+      Death j-z_78: 6713702075540755193
+      Death j-z_79: 3319499330701685530
+      Death j-z_8: -2094519118496070117
+      Death j-z_80: 6115507726527064711
+      Death j-z_81: 7506014566244484393
+      Death j-z_82: -3733388640233868798
+      Death j-z_83: -5813849995515354571
+      Death j-z_84: -3386028420607191284
+      Death j-z_85: -5673736310099758917
+      Death j-z_86: -7851860600219200535
+      Death j-z_87: -2082195842861756157
+      Death j-z_88: 4408375891429520591
+      Death j-z_9: -7717800935167989642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

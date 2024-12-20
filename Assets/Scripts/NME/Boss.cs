@@ -34,15 +34,8 @@ public class Boss : EnemyController
             Invoke("ThrowAbilities", Random.Range(minShootTime, maxShootTime));
         }
     }
-
     void BossDefeated()
     {
-        musicController.PlaySong(musicController.levelClearSong);    
-        Invoke("LoadScene", 6f);
-    }
-
-    void LoadScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);   
+        GameManager.instance.BossDefeated();
     }
 }
