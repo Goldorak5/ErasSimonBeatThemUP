@@ -483,6 +483,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: M.Crimson
       objectReference: {fileID: 0}
+    - target: {fileID: 2956983153806151624, guid: 4bc93968d65aa72498cf4fc23b79d400, type: 3}
+      propertyPath: maxHeight
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2956983153806151624, guid: 4bc93968d65aa72498cf4fc23b79d400, type: 3}
+      propertyPath: minHeight
+      value: -1.7
+      objectReference: {fileID: 0}
     - target: {fileID: 3189944822091595749, guid: 4bc93968d65aa72498cf4fc23b79d400, type: 3}
       propertyPath: m_TagString
       value: Enemy
@@ -1233,7 +1241,7 @@ MonoBehaviour:
   maxSpeed: 7
   deceleration: 10
   facingRight: 1
-  minHeight: -1.4
+  minHeight: -1.7
   maxHeight: 6
   cameraShake: {fileID: 963194230}
   landingCameraShakeProfil: {fileID: 11400000, guid: 5b3a4428b31ed0741bf265acb8d0b481, type: 2}
