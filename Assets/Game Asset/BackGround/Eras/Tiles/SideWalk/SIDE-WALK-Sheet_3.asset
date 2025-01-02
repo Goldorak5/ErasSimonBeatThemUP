@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SIDE-WALK-Sheet_3
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1724209359, guid: 0db7ad98ea713c84793807cbe2bba635, type: 3}
+  m_Sprite: {fileID: -481681029, guid: 4b1dd4437e416a74cb1ac2e266545c7d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

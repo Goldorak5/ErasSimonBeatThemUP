@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ROAD_LIGNE_5
+  m_Name: ROAD LIGNE_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1804656665, guid: fe1b6134e67b2874cbdab22b937cfabe, type: 3}
+  m_Sprite: {fileID: -176324512, guid: fd04ceee72b09e34ab9647ecf6fdccd8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
